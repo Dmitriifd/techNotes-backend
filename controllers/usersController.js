@@ -57,6 +57,7 @@ const createNewUser = asyncHandler(async (req, res) => {
 // @access Private
 const updateUser = asyncHandler(async (req, res) => {
   const { id, username, roles, active, password } = req.body;
+  console.log(id);
 
   // Confirm data
   if (
